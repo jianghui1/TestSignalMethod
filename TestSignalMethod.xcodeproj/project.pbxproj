@@ -15,6 +15,7 @@
 		5ADEB59D21058933001A702C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADEB59C21058933001A702C /* main.m */; };
 		5ADEB5A721058933001A702C /* TestSignalMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADEB5A621058933001A702C /* TestSignalMethodTests.m */; };
 		5ADEB5B221058933001A702C /* TestSignalMethodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADEB5B121058933001A702C /* TestSignalMethodUITests.m */; };
+		862A17A868A34B9A0B4117BB /* libPods-TestSignalMethodTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C6D8C4945819F1A96A51B9 /* libPods-TestSignalMethodTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D04B86DAA70784BB9E5C983 /* Pods-TestSignalMethodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSignalMethodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSignalMethodTests/Pods-TestSignalMethodTests.release.xcconfig"; sourceTree = "<group>"; };
 		5ADEB58A21058930001A702C /* TestSignalMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSignalMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADEB58D21058930001A702C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5ADEB58E21058930001A702C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		5ADEB5AD21058933001A702C /* TestSignalMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSignalMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADEB5B121058933001A702C /* TestSignalMethodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSignalMethodUITests.m; sourceTree = "<group>"; };
 		5ADEB5B321058933001A702C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C6D8C4945819F1A96A51B9 /* libPods-TestSignalMethodTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestSignalMethodTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B7081DCABC4D137C53007C /* Pods-TestSignalMethodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSignalMethodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSignalMethodTests/Pods-TestSignalMethodTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				862A17A868A34B9A0B4117BB /* libPods-TestSignalMethodTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				5ADEB5A521058933001A702C /* TestSignalMethodTests */,
 				5ADEB5B021058933001A702C /* TestSignalMethodUITests */,
 				5ADEB58B21058930001A702C /* Products */,
+				9BD980F2E2C448426E38C832 /* Pods */,
+				F626279792C7DDF882BA7F16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = TestSignalMethodUITests;
 			sourceTree = "<group>";
 		};
+		9BD980F2E2C448426E38C832 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7081DCABC4D137C53007C /* Pods-TestSignalMethodTests.debug.xcconfig */,
+				0D04B86DAA70784BB9E5C983 /* Pods-TestSignalMethodTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F626279792C7DDF882BA7F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69C6D8C4945819F1A96A51B9 /* libPods-TestSignalMethodTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ADEB5B921058933001A702C /* Build configuration list for PBXNativeTarget "TestSignalMethodTests" */;
 			buildPhases = (
+				964EAB262FB105FAA0354A2D /* [CP] Check Pods Manifest.lock */,
 				5ADEB59E21058933001A702C /* Sources */,
 				5ADEB59F21058933001A702C /* Frameworks */,
 				5ADEB5A021058933001A702C /* Resources */,
@@ -256,6 +281,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		964EAB262FB105FAA0354A2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSignalMethodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5ADEB58621058930001A702C /* Sources */ = {
@@ -463,6 +509,7 @@
 		};
 		5ADEB5BA21058933001A702C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B7081DCABC4D137C53007C /* Pods-TestSignalMethodTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +528,7 @@
 		};
 		5ADEB5BB21058933001A702C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D04B86DAA70784BB9E5C983 /* Pods-TestSignalMethodTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
